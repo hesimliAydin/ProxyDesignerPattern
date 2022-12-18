@@ -33,7 +33,7 @@ namespace ProxyDesignerPattern
     {
         public static List<string> GetDatas()
         {
-            var result = File.ReadAllText(@"~/../../../File/Notes.txt").Split('\n');
+            var result = File.ReadAllText(@"~/../../../../File/Notes.txt").Split('\n');
             for (int i = 0; i < result.Length; i++)
             {
                 result[i] = result[i].Remove(result[i].Length - 2, 2);
